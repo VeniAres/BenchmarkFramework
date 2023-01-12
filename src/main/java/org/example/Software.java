@@ -3,22 +3,20 @@ package org.example;
 public class Software {
 
     private String title;
-    private double consumption;
+    private Double consumption;
 
-    public Software(String title,double consumption){
+    public Software(String title, Double consumption) {
         this.title = title;
         this.consumption = consumption;
     }
 
-  /**  public String getTitle(){
-
+    public String getTitle() {
         return this.title;
-    }*/
+    }
 
-   /** public double getConsumption(){
+    public Double getConsumption() {
         return this.consumption;
-    }*/
-
+    }
 
 
 }

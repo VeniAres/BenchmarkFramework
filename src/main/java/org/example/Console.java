@@ -1,8 +1,11 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+/**
+ * @author Marko Petric;mp.marko@hotmail.com;3660845;Niklas Werner;niklas.0711@gmax.de;3662733
+ * @version 12.01.2023
+ */
 
 
 
@@ -10,14 +13,20 @@ public abstract class Console {
     private final Integer versionNumber;
     private final ProcessingUnit processingUnit;
 
-    private List<Software> softwareSet = new LinkedList<>();
+    public List<Software> getSoftwareList() {
+        return softwareList;
+    }
+
+    private final List<Software> softwareList ;
 
 
-    public Console(Integer versionNumber, ProcessingUnit processingUnit,List<Software> softwareSet){
+
+
+    public Console(Integer versionNumber, ProcessingUnit processingUnit,List<Software> softwareList){
 
         this.versionNumber = versionNumber;
         this.processingUnit = processingUnit;
-        this.softwareSet = softwareSet;
+        this.softwareList = softwareList;
 
     }
 
@@ -26,14 +35,12 @@ public abstract class Console {
         softwareSet.add(software);
     }*/
 
-    public int getVersionNumber(){
+    public ProcessingUnit getProcessingUnit(){
 
-        return this.versionNumber;
+        return this.processingUnit;
     }
 
-    public List<Software> getSoftwareSet(){
-        return this.softwareSet;
-    }
+
 
 
 }
